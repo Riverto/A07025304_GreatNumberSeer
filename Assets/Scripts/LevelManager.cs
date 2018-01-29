@@ -14,13 +14,16 @@ public class LevelManager : MonoBehaviour {
 	void Update () {
 		
 	}
-
+    
+    //Used to jump from one scene to another by giving it the name
+    //of the scene you want to jump to
     public void LoadLevel(string levelName)
     {
         Debug.Log("Level Load Requested for: " + levelName);
         SceneManager.LoadScene(levelName);
     }
 
+    //Closes the application
     public void EndGame()
     {
         Debug.Log("Game Finished");
